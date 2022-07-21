@@ -107,6 +107,10 @@ const SimpleStore = () => {
     login();
    })
 
+/************************************* Styling Controllers *******************************************/
+
+const walletStyle = {color: "#4dfed4", borderColor: "#4dfed4"};
+
 /************************************* App Elements *******************************************/
 
     return (
@@ -119,7 +123,7 @@ const SimpleStore = () => {
             <div className="connection-div">
                 <p className="logout" onClick={logout}>{logoutText}</p>
                 <div className="wallet-div">
-                    <button className="wallet-btn" onClick={login}>{connectButtonText}</button>
+                    <button className="wallet-btn" style={defaultAccount && walletStyle} onClick={login}>{connectButtonText}</button>
                     {defaultAccount ? defaultAccount.substring(0,5) + "..." + defaultAccount.substring(defaultAccount.length - 5) : "Network : Rinkeby"}
                 </div>
             </div>
