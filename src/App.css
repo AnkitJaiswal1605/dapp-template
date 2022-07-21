@@ -27,9 +27,10 @@
 .loading-msg {
   position: absolute;
   top: 4rem;
-  left: 45rem;
   color: #4dfed4;
   font-family: 'Inria Sans', sans-serif;
+  width: 100vw;
+  text-align: center;
 }
 
 .connection-div {
