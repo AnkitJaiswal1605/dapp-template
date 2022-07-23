@@ -6,7 +6,7 @@ const SimpleStore = () => {
 
 /************************************* Variables & States *******************************************/
 
-    const contractAddress = '0xB01694f14126ad278c0B20AE0f324396e2F96395';
+    const contractAddress = '0x517ae01f2974EF696d05Aca41a4ECfa6C3F6ae37';
 
     const [defaultAccount, setDefaultAccount] = useState(null);
     const [contract, setContract] = useState(null);
