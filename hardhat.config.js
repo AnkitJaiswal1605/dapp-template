@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-etherscan");
 
 const ALCHEMY_API_KEY = "6dVadFEVLRL2o-OrW0dKSAaO9O_PVIEQ";
 
@@ -12,5 +13,8 @@ module.exports = {
       url: `https://eth-rinkeby.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
       accounts: [`${RINKEBY_PRIVATE_KEY}`]
     }
+  },
+  etherscan: {
+    apiKey: "C6N3MEM7DCAJTCKWENARID9RPTTBKXZH6V"
   },
 };
